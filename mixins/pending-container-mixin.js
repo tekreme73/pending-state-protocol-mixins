@@ -14,4 +14,8 @@ export const PendingContainer = (base) => class extends base {
             this.__hasPendingChildren = this.__pendingCount !== 0;
         });
     }
+
+    get isPending() {
+        return this.__hasPendingChildren;
+    }
 };
